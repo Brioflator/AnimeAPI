@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: AnimeAPI
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+  datasource:
+    url: jdbc:postgresql://aws-0-eu-central-1.pooler.supabase.com:5432/postgres
+    username: postgres.dtzserydfyqtqygbyvvp
+    password: TeesTatspa55
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 30000
+      connection-timeout: 20000
+      max-lifetime: 1800000
+logging:
+  level:
+    org:
+      springframework: DEBUG
+  file:
+    name: application.log
+
+jwt:
+  secret: "abaa56443b12dedef6cf1509bd87df156229a543aed40f50d4f0b447b20cb5456f169046779bda76143eafd5efc4d5a4e5855444629cceb51e67d2b40b199b1cda5e583bc972c7f00aa0b0894eeb713d2999c5bd68b271792f1a3f3025eb1b11dd2597433a89334745b7b3c43a49467eb1a7ab7c3707e276b0acc5b8efe834da4398ed042f3c4c26b5c79dacc434504497b94a2a49b7b22f6e62644d2fe004c4e2267b8bae84b21b9f6f627641a33f7d6098520c430ccea761237e600c99b5f5f4d706937f3793fb192ca55cd5a658df9e58761e159e1e8d3461c9596064e28e6784edd1eff0f1ed4d5d4bad6e5cb001ff2a20b2fa82f3e13b93a3fff8f5e392e857653b7770004a0f4d00a46b23b54f82ca82c45eb98b7f013b226a66b1e45830063d65eb71419cce4e5c70a46ef63ae374b4435783a696a5b7afd806b4c6c15489d8929397090c0e92d1ef5e14bc417fdb730f4ef68b81661d672a4256788f52967ee3b553b625c5cfd94be4f59f902cc38e1c125f1407c61cd60c0611b1298eabda7b7e595fa04befb47870c25e173bed24efa27502ef8239d18683175b9626dda5abc0d64b516447aeb386cd5c797e50a452432aaaff6673d8ab40f3fe7568a6b8161cdbccb4b9f6b23bf657e07b37dcc2f3598d8e117d8e4c6c3c09783919f1d49761cbe484e4d9d34d2aa480c6ec9e1a6faca4e6a3f21a6a1e2ef5555a"
+
